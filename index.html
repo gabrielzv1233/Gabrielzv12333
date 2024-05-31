@@ -1,28 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-      alert("most links are broken, check console logs to see a more detailed explanation")
-      console.log("replit has removed readable urls, replacing them with a randomly generated URL, i am not sure if the url ever gets re-rolled ranomly or somthing, i dont work at relpit so again i dont know, so i will not be updating the buttons with new links, if you want a readable or custom URL, you need to host the repl, i am too pay for that so sorry :(, this breaks most links in this project so this is mostly for show now, you still can go to the repo on replit to find it, the links may be changed in the future to the repo also, i dont know as of now so please bear with me")
-    </script>
-    <meta content="Gabrielzv1233" property="og:title" />
-    <meta content="home page for Gabrielzv1233's projects" property="og:description" />
-    <meta content="https://gabrielzv1233.repl.co" property="og:url" />
-    <meta content="https://storage.googleapis.com/replit/images/1669052999766_31efbd3d445911625e8dcf997852b2d3.jpeg" property="og:image" />
-    <meta content="#0E1525" data-react-helmet="true" name="theme-color" />
-    <meta name="robots" content="index, follow">
-    <meta name="keywords" content="profile, coding, gabrielzv1233, minecraft, gaming, projects, replit">
-    <meta name="author" content="Gabrielzv1233">
+  <meta content="Gabrielzv1233" property="og:title" />
+  <meta content="home page for Gabrielzv1233's projects" property="og:description" />
+  <meta content="https://gabrielzv1233.repl.co" property="og:url" />
+  <meta content="https://storage.googleapis.com/replit/images/1669052999766_31efbd3d445911625e8dcf997852b2d3.jpeg" property="og:image" />
+  <meta content="#0E1525" data-react-helmet="true" name="theme-color" />
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="profile, coding, gabrielzv1233, minecraft, gaming, projects, replit">
+  <meta name="author" content="Gabrielzv1233">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta http-equiv="content-language" content="en">
   <link rel="shortcut icon" 
 href="https://storage.googleapis.com/replit/images/1669052999766_31efbd3d445911625e8dcf997852b2d3.jpeg">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    .button {
+      background-color: black;
+      color: limegreen;
+      font-size: 3vw;
+      vertical-align: middle;
+      width: 100%;
+      height: 50%;
+      max-width: 100%;
+      max-height: 100%;
+      align-items: center;
+      margin: 0;
+    }
+    .button:hover {
+        background-color: #1A1A1A;
+      cursor: pointer;
+    }
+    .container {
+       display: flex;
+       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Dropdown Content */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: black;
+      z-index: 1;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: limegreen;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      font-size: 170%;  
+    }
+    
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #1A1A1A;}
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block; width: 50vw /*dropdown-width*/}
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: #1A1A1A; width: 50vw /*dropdown-width*/;}
+    .dropbtn {
+      background-color: black;
+      color: limegreen;
+      font-size: 200%;
+    width: 50vw /*dropdown-width*/;
+      cursor: pointer;
+    }
+    .bgimg {
+      background-image: url('https://storage.googleapis.com/replit/images/1669052999766_31efbd3d445911625e8dcf997852b2d3.jpeg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    .DiscordRDR {
+      color: lightgrey;
+      background-color: #0E1525;
+      text-align: center;
+    }  
+  </style>
   <title>Gabrielzv1233's website</title>
 </head>
-<body style="margin:0;"><div class="dropdown"><button class="dropbtn">Github projects</button><div class="dropdown-content"><a   href="https://www.youtube.com/@gabrielzv1233">Youtube</a><a href="https://gabrielzv1233.itch.io">Itch.io</a><a href="https://replit.com/@gabrielzv1233">Replit</a><a href="Discord">Discord</a><a href="https://gd.games/gabrielzv1233">Games (deprecated list)</a></div></div><div class="dropdown"><button class="dropbtn"></div></div>
+<body style="margin:0;"><div class="dropdown"><button class="dropbtn">Github projects</button><div class="dropdown-content"><a href="https://github.com/gabrielzv1233/JewFuss-XT">JewFuss-XT</a><a href="https://github.com/gabrielzv1233/eaglerPVP2">eaglerPVP2</a><a href="https://github.com/gabrielzv1233/msgr">msgr v2</a><a href="https://github.com/gabrielzv1233/shitbot">Shitbot</a></div></div><!-- Wow new area --><div class="dropdown"><button class="dropbtn">Bookmarklets</button><div class="dropdown-content"><a href="https://github.com/gabrielzv1233/Cursor-selector-bookmarklet">Cursor selector</a><a href="https://github.com/gabrielzv1233/HTML-editor-bookmarklet">HTML editor</a><a href="https://github.com/gabrielzv1233/CSS-injector-bookmarklet">CSS injector</a><a href="https://github.com/gabrielzv1233/post-it-bookmarklet">Post-it™</a></div></div>
 </body><body class="bgimg"></body>
 <!-- code for discord widget -->
 <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer></script>
