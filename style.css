@@ -53,15 +53,15 @@
 .dropdown-content a:hover {background-color: #1A1A1A;}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block; width: 25vw}
+.dropdown:hover .dropdown-content {display: block; width: 100vw}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #1A1A1A; width: 25vw;}
+.dropdown:hover .dropbtn {background-color: #1A1A1A; width: 100vw;}
 .dropbtn {
   background-color: black;
   color: limegreen;
   font-size: 200%;
-width: 25vw;
+width: ;
   cursor: pointer;
 }
 .bgimg {
