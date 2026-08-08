@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Privacy Policy for the Discord Channel Checkup / Wrapped bot.">
+  <title>Privacy Policy | Discord Channel Checkup</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f6f7fb; --card:#fff; --text:#202225; --muted:#5f6573; --accent:#5865f2; --border:#dfe2e8; --notice:#eef0ff; --warn:#fff6dc; --warn-border:#d99b00; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#111318; --card:#1c1f26; --text:#f2f3f5; --muted:#b5bac1; --border:#343842; --notice:#25294a; --warn:#3b3115; --warn-border:#f0b232; } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { width:min(940px,calc(100% - 32px)); margin:48px auto; padding:clamp(24px,5vw,56px); background:var(--card); border:1px solid var(--border); border-radius:18px; box-shadow:0 12px 36px rgb(0 0 0 / .08); }
+    h1 { margin:0 0 8px; font-size:clamp(2rem,5vw,3rem); line-height:1.1; }
+    h2 { margin:2.2rem 0 .6rem; font-size:1.3rem; }
+    h3 { margin:1.4rem 0 .35rem; font-size:1.05rem; }
+    p, li { max-width:78ch; }
+    a { color:var(--accent); }
+    .meta { color:var(--muted); margin-top:0; }
+    .notice, .warning { margin:24px 0; padding:16px 18px; border-left:4px solid var(--accent); border-radius:8px; background:var(--notice); }
+    .warning { border-left-color:var(--warn-border); background:var(--warn); }
+    nav { display:flex; gap:16px; flex-wrap:wrap; margin:24px 0 8px; }
+    table { width:100%; border-collapse:collapse; margin:16px 0; font-size:.95rem; }
+    th, td { padding:12px; border:1px solid var(--border); text-align:left; vertical-align:top; }
+    th { background:var(--notice); }
+    footer { margin-top:42px; padding-top:20px; border-top:1px solid var(--border); color:var(--muted); }
+    @media (max-width:700px) { table, thead, tbody, tr, th, td { display:block; } thead { position:absolute; left:-9999px; } td { border-bottom:0; } tr { border-bottom:1px solid var(--border); margin-bottom:14px; } td::before { content:attr(data-label); display:block; font-weight:700; margin-bottom:4px; } }
+    @media print { body { background:#fff; } main { width:100%; margin:0; padding:0; border:0; box-shadow:none; } nav { display:none; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Discord Channel Checkup / Wrapped Bot<br>Effective and last updated: August 7, 2026</p>
+    <nav aria-label="Legal documents">
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html" aria-current="page">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <div class="warning">
+    <strong>Important:</strong> The Bot records supported activity for non-bot members in servers where it is present. Collection is not limited to people who run <code>/wrapped</code> or subscribe to annual DMs. The Operator and authorized developers, including Gabriel (<strong>@gabrielzv1233</strong>), can access all data stored by the Bot and its operational logs.
+  </div>
+
+  <h2>1. Scope and operator</h2>
+  <p>This Privacy Policy explains how the Discord bot known as Discord Channel Checkup or Discord Wrapped (the “Bot”) handles information. The Bot is operated by Gabriel, Discord username <strong>gabrielzv1233</strong> (the “Operator”). This Policy applies to people who interact with the Bot and to non-bot members whose supported activity is observed in a Discord server where the Bot is present.</p>
+
+  <h2>2. Plain-language summary</h2>
+  <ul>
+    <li>The Bot counts activity; it does not save message text, attachment contents, links, voice audio, or video.</li>
+    <li>It records voice-call duration and relationships needed to show who spent time in calls together.</li>
+    <li>It stores data locally in JSON files and keeps some current-session data in memory.</li>
+    <li>There is no automatic deletion period in the Bot.</li>
+    <li>Personal summaries are sent ephemerally or by DM, but they can contain other users’ identities and shared-call time.</li>
+    <li>Developers with access to the Bot’s host, including Gabriel, can see all stored data and logs.</li>
+  </ul>
+
+  <h2>3. Information handled by the Bot</h2>
+  <table>
+    <thead><tr><th>Category</th><th>What is handled</th><th>How it is used</th></tr></thead>
+    <tbody>
+      <tr>
+        <td data-label="Category">Discord identifiers and profile information</td>
+        <td data-label="What is handled">Discord user IDs; server IDs; voice channel IDs during active sessions; usernames, global display names, and avatars when Discord makes them available; and server names used to label results.</td>
+        <td data-label="How it is used">To associate activity with a user, resolve IDs into readable names, display an avatar on a summary, identify servers and call partners, and deliver annual DMs.</td>
+      </tr>
+      <tr>
+        <td data-label="Category">Message and reaction activity</td>
+        <td data-label="What is handled">Monthly counts of messages sent, reactions added, messages edited, and messages deleted, plus message counts by server.</td>
+        <td data-label="How it is used">To create monthly, yearly, and all-time activity summaries and exports.</td>
+      </tr>
+      <tr>
+        <td data-label="Category">Voice activity</td>
+        <td data-label="What is handled">Call joins; call start time; current server and voice channel while a session is active; total call minutes; minutes alone; minutes by server; IDs of other non-bot users present and shared-call minutes; and time self-muted or self-deafened.</td>
+        <td data-label="How it is used">To calculate call statistics, top servers, top people, and mute/deafen summaries, and to restore or close sessions after a restart.</td>
+      </tr>
+      <tr>
+        <td data-label="Category">Subscription and delivery information</td>
+        <td data-label="What is handled">Whether a user subscribed to annual Wrapped DMs; subscribed user IDs; delivery status; delivery time; fetched username/display-name snapshots; and delivery or processing error text.</td>
+        <td data-label="How it is used">To send annual summaries, avoid sending them to unsubscribed users, and diagnose failed generation or delivery.</td>
+      </tr>
+      <tr>
+        <td data-label="Category">Generated summaries and exports</td>
+        <td data-label="What is handled">Monthly, yearly, and all-time totals, rankings, references to servers and call partners, generation time, and the Bot’s configured time zone. Exports can be generated as JSON, HTML, or Excel.</td>
+        <td data-label="How it is used">To provide the core Wrapped/Channel Checkup feature requested by a user.</td>
+      </tr>
+      <tr>
+        <td data-label="Category">Operational information</td>
+        <td data-label="What is handled">In-memory caches, pending-write state, exception details, and console logs relating to startup, synchronization, storage, exports, user fetches, and DM delivery.</td>
+        <td data-label="How it is used">To operate, maintain, and troubleshoot the Bot.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>4. What the Bot does not store</h2>
+  <p>The Bot is configured to receive message-related Discord events, including message-content access, but the reviewed application code uses message events only to identify the author, determine whether the message was in a server, update counts, and process commands. It does not save or display message text, attachments, links, or other message contents. It also does not record voice audio, video, screen-share content, email addresses, passwords, payment data, IP addresses, or precise location.</p>
+
+  <h2>5. How information is used</h2>
+  <p>The Bot uses information only to:</p>
+  <ul>
+    <li>measure supported Discord activity and maintain active voice sessions;</li>
+    <li>create private monthly, yearly, and all-time summaries;</li>
+    <li>rank a user’s servers and voice-call partners by recorded activity;</li>
+    <li>generate user-requested JSON, HTML, and Excel exports;</li>
+    <li>manage opt-in annual Wrapped DMs and record whether delivery succeeded; and</li>
+    <li>operate, secure, debug, and maintain the Bot.</li>
+  </ul>
+  <p>The reviewed application code contains no advertising, sale of personal data, data-broker disclosure, payment processing, or AI/model-training feature.</p>
+
+  <h2>6. Who can see information</h2>
+  <h3>The Operator and developers</h3>
+  <p>The Operator and anyone authorized to develop, host, maintain, or troubleshoot the Bot—including Gabriel (<strong>@gabrielzv1233</strong>)—may access all locally stored Bot data, active-session data, subscription records, delivery records, and operational logs. This access includes information about users who never ran a Bot command but were observed in a server where the Bot was present.</p>
+
+  <h3>The user receiving a summary</h3>
+  <p>A user receives their summary through an ephemeral Discord interaction or an annual direct message. Their results may show:</p>
+  <ul>
+    <li>server names and server IDs, along with message or call totals for those servers; and</li>
+    <li>other users’ Discord IDs or usernames and the amount of time recorded in shared voice calls.</li>
+  </ul>
+  <p>This means limited information about one user can be displayed to another user outside the Operator/developer team. The Bot does not intentionally publish summaries in public channels. A recipient can still download, copy, screenshot, or redistribute a summary or export, and the Operator cannot control a copy after it has been shared.</p>
+
+  <h3>Discord</h3>
+  <p>The Bot operates through Discord. Discord transmits events to the Bot and delivers interactions, DMs, embeds, mentions, and export attachments. Discord therefore processes information under its own terms and privacy policy. Discord is not operated by Gabriel.</p>
+
+  <h3>Legal and safety disclosures</h3>
+  <p>The Operator may preserve or disclose information when reasonably necessary to comply with applicable law, respond to valid legal process, investigate abuse or security incidents, or protect users, the Bot, the Operator, Discord, or others. No routine legal-disclosure feature is implemented by the Bot itself.</p>
+
+  <h2>7. Storage and retention</h2>
+  <p>Persistent information is stored as JSON files on the Bot’s host, organized primarily by Discord user ID and year. Active voice-session details and cached statistics are also held in memory while the Bot runs. Some session information is written to disk so an interrupted voice session can be reconciled after a restart.</p>
+  <p>The Bot has <strong>no automatic retention limit and no automatic account-data deletion</strong>. Yearly statistics and related identifiers may remain until the Operator manually deletes them or the Service is decommissioned. Removing the Bot from a server, leaving a server, or unsubscribing from annual DMs stops some future activity or messaging but does not automatically delete historical data.</p>
+
+  <h2>8. User choices and controls</h2>
+  <ul>
+    <li><strong>View:</strong> Use <code>/wrapped</code> to view available statistics privately.</li>
+    <li><strong>Export:</strong> Use the Export stats button to obtain available data in JSON, HTML, or Excel format.</li>
+    <li><strong>Annual DMs:</strong> Use the subscription button in the Wrapped interface to subscribe or unsubscribe.</li>
+    <li><strong>Collection:</strong> The reviewed Bot has no individual opt-out command for activity tracking while the Bot remains in a shared server.</li>
+    <li><strong>Deletion or correction:</strong> The reviewed Bot has no self-service deletion or correction command. Contact the Operator to ask about access, correction, or deletion. The Operator may need to verify the Discord account connected to a request.</li>
+  </ul>
+
+  <h2>9. Security</h2>
+  <p>The Bot uses local files and restricts its interactive summary and export controls to the target Discord user. No method of transmission or storage is completely secure. The Operator cannot guarantee that information will never be lost, corrupted, or accessed without authorization. If a security incident affects user information, the Operator will respond and provide notices as required by applicable law and Discord’s developer requirements.</p>
+
+  <h2>10. Children</h2>
+  <p>The Bot is not directed to people below Discord’s minimum permitted age or the minimum age required in their country, whichever is higher. If you believe the Bot has handled information about someone who is not permitted to use Discord, contact the Operator.</p>
+
+  <h2>11. Automated processing</h2>
+  <p>The Bot automatically totals and ranks activity to create entertainment and informational summaries. It does not make employment, housing, credit, insurance, education, legal, or similarly significant decisions about users.</p>
+
+  <h2>12. Changes to this Policy</h2>
+  <p>This Policy may be updated when the Bot, its data practices, legal requirements, or Discord’s requirements change. The effective date above will be revised. Where required, material changes will be communicated through an appropriate Discord notice.</p>
+
+  <h2>13. Contact</h2>
+  <p>For privacy questions or requests relating to the Bot, contact Gabriel at <strong>@gabrielzv1233</strong> on Discord. Do not send passwords, authentication tokens, or other sensitive credentials.</p>
+
+  <footer>
+    <p>This Policy describes the Bot behavior reflected in its application code as reviewed on August 7, 2026. It is a practical draft and not a substitute for advice from a qualified privacy lawyer in the Operator’s jurisdiction.</p>
+  </footer>
+</main>
+</body>
+</html>
